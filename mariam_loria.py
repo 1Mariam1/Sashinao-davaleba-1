@@ -1,3 +1,6 @@
+#საშინაო დავალება 1
+#მარიამ ლორია 
+#ჯგუფი 15
 #2
 class Calculator:
   def __init__(self, a, b):
@@ -20,26 +23,6 @@ p5.mul()
 p5.div()
 
 #3
-#class Rectangle:
-  #def __init__(self, L, W):
-   # self.length = L
-    #self.width = W
-
-#  def area(self):
-#        print('martkutxedis fartobi', self.length * self.width)
-#  def perimeter(self):
-#        print('martkutxedis perimetri', (self.length + self.width) * 2)
-  
-#  def print_info(self):
- #   return f"Length - {self.length()}, Width - {self.width()}"
-
-#p6 = Rectangle(4, 5)
-#p6.area()
-#p6.perimeter()
-#p6.print_info()
-
-
-#3
 class Rectangle:
   def __init__(self, length, width):
     self.length = length
@@ -58,7 +41,17 @@ if __name__ == "__main__":
   r = Rectangle(5,6)
   print(r.print_info())
 
+#4  
 import csv
+
+csv_file = open('dataset1.csv')
+for row in csv_file:
+  print(row)
+
+csv_file.close()
+  reader = csv.reader(Emploee)
+  for row in reader:
+    print(row)
 
 class Employee:
   def __init__(self, name=row[1], surname=row[2], age=row[3], salary=row[4]):
